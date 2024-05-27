@@ -63,7 +63,7 @@ public class Main {
 
 
 
-    // утилитный метод ввода данных с консоли
+    // утилитны метод ввода данных с консоли
     private static int inputNumRead() throws RuntimeException {
         try {
             return Integer.parseInt(reader.readLine());
