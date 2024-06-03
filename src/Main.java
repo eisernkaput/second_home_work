@@ -13,7 +13,7 @@ public class Main {
       thirdTask();
             forthTask();
             fifthTask();
-//        sixthTask();
+        sixthTask();
 //            seventhTask();
     }
 
@@ -202,10 +202,10 @@ public class Main {
         int halfArrayIndex = inputArr.length / 2;
         for (int i = 0; i < inputArr.length; i++) {
             int nextIndex = i + 1;
-            if (Objects.equals(inputArr[i], inputArr[halfArrayIndex])) {
-                //добавить все от следующего элемента до половины и искать дальше
+            if (inputArr[i] >= inputArr[halfArrayIndex]) {
+                //искать от следующего элемента и до конца
                 for (int j = nextIndex; j < inputArr.length; j++) {
-                    if (j <= halfArrayIndex || Objects.equals(inputArr[i], inputArr[j])) {
+                    if (Objects.equals(inputArr[i], inputArr[j])) {
                         if (j == nextIndex) outputList.add(i);
                         outputList.add(j);
                     }
