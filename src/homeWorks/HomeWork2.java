@@ -150,8 +150,8 @@ public class HomeWork2 {
             inputArrInt = result.toArray(inputArrInt);
             mergeSort(result.toArray(inputArrInt));
             System.out.println("Отсортированный массив: ");
-            System.out.print(Arrays.toString(inputArrInt));
-            System.out.printf("\nИндексы дубликатов: %s", duplicateIndex(inputArrInt));
+            System.out.println(Arrays.toString(inputArrInt));
+            System.out.printf("Индексы дубликатов: %s", duplicateIndex(inputArrInt));
         } catch (Exception e) {
             throw new NumberFormatException(String.format("Введен некорректный символ (не число). %s", e));
         }
